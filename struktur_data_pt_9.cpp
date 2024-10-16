@@ -112,10 +112,11 @@ int main()
 
     do
     {
-        cout << "Menu Stack Data Mahasiswa:\n";
-        cout << "1. Insert Data Mahasiswa\n";
-        cout << "2. Hapus Data Mahasiswa\n";
-        cout << "3. Cetak Data Mahasiswa\n";
+        cout << "---------------------------\n";
+        cout << "Linked List Data Mahasiswa:\n";
+        cout << "1. Insert Data\n";
+        cout << "2. Hapus Data\n";
+        cout << "3. Cetak Data\n";
         cout << "4. Exit\n";
         cout << "Pilihan: ";
         cin >> pilihan;
@@ -124,6 +125,7 @@ int main()
         switch (pilihan)
         {
         case 1:
+            cout << "---------------------------\n";
             cout << "Masukkan Nama: ";
             getline(cin, nama);
             cout << "Masukkan NIM: ";
@@ -143,6 +145,7 @@ int main()
             else
             {
                 displayStackWithID();
+                cout << "---------------------------\n";
                 cout << "Masukkan ID mahasiswa yang ingin dihapus: ";
                 cin >> idHapus;
                 deleteByID(idHapus);
